@@ -1,6 +1,7 @@
 syntax enable
 filetype indent plugin on
 set background=dark
+colorscheme solarized
 
 set tabstop=4
 set softtabstop=4
