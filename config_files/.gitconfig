@@ -1,0 +1,13 @@
+[user]
+	name = Sean
+	email = seangrady@clariturehealth.com
+[alias]
+	co = checkout
+	br = branch
+	cm = commit
+	st = status
+	brs = branch --sort=committerdate
+	unstage = reset HEAD --
+	amend = commit --amend --no-edit
+[core]
+	editor = vi
