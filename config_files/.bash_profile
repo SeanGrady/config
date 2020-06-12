@@ -1,5 +1,5 @@
 alias rm="rm -i"
-alias ls="ls -Gah"
+alias ls="ls -Gah --color"
 alias rld="source ~/.bash_profile"
 
 # enable the git bash completion commands
@@ -17,4 +17,9 @@ fi
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
+fi
+
+# Set up dircolors because WSL/WSL2 doesn't seem to handle it well
+if [ -f ~/.dir_colors ]; then
+  eval `dircolors ~/.dir_colors`
 fi
